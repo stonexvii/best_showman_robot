@@ -1,7 +1,7 @@
+from typing import Callable, Dict, Any, Awaitable
+
 from aiogram import BaseMiddleware
 from aiogram.types import TelegramObject
-
-from typing import Callable, Dict, Any, Awaitable
 
 import config
 
@@ -13,6 +13,6 @@ class AdminMiddleware(BaseMiddleware):
         update: TelegramObject,
         data: Dict[str, Any]
     ) -> Any:
-        if update.from_user.id == config.MODERATOR_ID:
+        if update.from_user.id == config.ADMIN_ID:
             result = await handler(update, data)
             return result

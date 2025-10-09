@@ -8,9 +8,7 @@ class GPTRole(Enum):
 
 
 class AIRole(Enum):
-    WELCOME = 'ai_welcome'
-    MODERATOR = 'ai_moderator'
-    ASSISTANT = 'wedding_ai_assistant'
+    SHOWMAN = 'ai_showman'
 
 
 class GPTModel(Enum):

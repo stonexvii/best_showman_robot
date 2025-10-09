@@ -1,11 +1,12 @@
+import json
 import os
 
 import openai
-import json
+
 import config
 from classes.file_manager import FileManager
 from classes.resources_paths import AI_PROMPTS_PATH
-from .enums import AIRole, GPTRole, GPTModel
+from .enums import GPTRole, GPTModel
 
 
 class GPTMessage:
