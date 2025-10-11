@@ -61,7 +61,7 @@ async def pause_handler(message: Message, bot: Bot, state: FSMContext):
         await state.update_data(
             {
                 'count': 0,
-                'messages': msg_list,
+                'messages': msg_list.json(),
             }
         )
         await text_messages(message, bot, state)
