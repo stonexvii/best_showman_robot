@@ -7,10 +7,6 @@ class GPTRole(Enum):
     SYSTEM = 'system'
 
 
-class AIRole(Enum):
-    SHOWMAN = 'ai_showman'
-
-
 class GPTModel(Enum):
     GPT_3_TURBO = 'gpt-3.5-turbo'
     GPT_4_TURBO = 'gpt-4-turbo'
